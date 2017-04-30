@@ -5,6 +5,11 @@
 		text-align: center;
 	}
 
+	.tmdbLogo {
+		width: 204px;
+		height: 80px;
+	}
+
 </style>
 
 <!doctype html>
@@ -23,17 +28,19 @@
 	<h1>Movie Picker</h1>
 	
 	<form method="post" action="/Search-movies">
-		<label for="keywords">What kind of movie do you want to see?</label></br />
-		<input type="text" name="keywords" placeholder="Keywords" />
-		<button type="submit" value="Submit">Submit</button>
-
+		<label for="genre">Genre:</label></br>
 		<select>
 		<!--
 		NEED TO FIND A WAY TO USE AN ARRAY OF GENRES
 		-->
 			<option value="Comedy">Comedy</option>
 			<option value="Drama">Drama</option>
+			<option value="Romance">Romance</option>
 		</select>
+		</br>
+		<label for="keywords">What kind of movie do you want to see?</label></br>
+		<input type="text" name="keywords" placeholder="Keywords" />
+		<button type="submit" value="Submit">Submit</button>
 	</form>
 </div>
 </html>
