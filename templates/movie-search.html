@@ -5,6 +5,18 @@
 		text-align: center;
 	}
 
+	h2 {
+		text-align: center;
+	}
+
+	.img-responsive {
+		display: block;
+		margin: 0 auto;
+
+		width: 20%;
+		height: 20%;
+	}
+
 </style>
 
 <!doctype html>
@@ -21,14 +33,13 @@
 
 <div class="container-fluid">
 	<h1>Movie Picker</h1>
-	<h2>You should watch {{ movie }}</h2>
+	<h2>You should watch {{ movieTitle }}</h2>
+	<img src={{ poster }} class="img-responsive" alt="movie poster">
 	<!--
 	<h2>Genre: {{ genre }}</h2>
 	-->
 
-	<!--
-	BACK BUTTON
-	-->
+	<!-- BACK BUTTON -->
 	<form action="/">
 		<button type="submit">Try Again?</button>
 	</form>
